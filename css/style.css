@@ -34,17 +34,34 @@ body{
 	font-size: 0;
 }
 .icon-item{
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	font-size: 14px;
-	margin-right: 25px;
+	margin-right: 27px;
+	padding-top: 95px;
 }
-.icon-item p{
-	margin-top: 20px;
-}
-.icon-item img{
+.icon-item::before{
+	position: absolute;
+	content: "";
+	display: block;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	top:0;
+	right: 50%;
+	margin-right: -36px;
 	width: 72px;
 	height: 72px;
+	display: block;	
+}
+.icon-item:nth-child(1)::before{
+	background-position: -5px -87px;
+}
+.icon-item:nth-child(2)::before{
+	background-position: -87px -5px;
+}
+.icon-item:nth-child(3)::before{
+	background-position: -5px -5px;
 }
 .btn{
 	background-color: #dd2222;
@@ -53,12 +70,38 @@ body{
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 24px;
-	padding: 17px 55px;
+	padding: 18px 55px;
 	border-radius: 4px;
-	margin-top: 110px;
+	margin-top: 130px;
 	margin-bottom: 100px;
 	cursor: pointer;
 }
+
 .btn:hover{
 	background-color: #9f0202;
+}
+
+/*sprite*/
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon_hand {
+    width: 72px;
+    height: 72px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon_present {
+    width: 72px;
+    height: 72px;
+    background-position: -87px -5px;
+}
+
+.sprite-icon_tree {
+    width: 72px;
+    height: 70px;
+    background-position: -5px -87px;
 }
