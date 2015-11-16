@@ -2,13 +2,23 @@
 <html>
 	<head lang="ru">
 			<meta charset="utf-8">
+			<meta http-equiv="x-ua-compatible" content="ie=edge">
 			<title>Дари дерево: дари живое</title>
-			<meta content="Дари дерево, дари живое, купить дерево в подарок, купить березу, купить дуб, купить пихту" name="keywords">
+			<meta name="keywords" content="Дари дерево, дари живое, купить дерево в подарок, купить березу, купить дуб, купить пихту">
+			<meta name="description" content="">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPT+Sans:700%7CRoboto:700&amp;subset=latin,cyrillic">
+			<link rel="stylesheet" href="css/normalize.css">
 			<link rel="stylesheet" href="css/style.css">
 	</head>
 <body>
-	<section class="intro-slide container">
+	<section class="intro-slide">
+		<video class="masthead-video" autoplay loop poster="img/intro.jpg">
+			<source src="video/intro.webm" type="video/webm">
+			<source src="video/intro.mp4" type="video/mp4">
+			<source src="video/intro.ogg" type="video/ogg" />
+		</video>
+		<div class="masthead-overlay"></div>
 		<div class="logo">
 			<img width="149" height="200" alt="Дари дерево" src="img/logo.png">
 		</div>
@@ -24,7 +34,12 @@
 				с инструкцией по уходу
 			</div>
 		</div>
-		<a class="btn">Найти подарок</a>
+		<div class="btn-intro-wrapper">
+			<a class="btn">Найти подарок</a>
+		</div>
 	</section>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/vendor/covervid.mid.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

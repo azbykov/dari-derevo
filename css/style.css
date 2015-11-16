@@ -2,26 +2,35 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "Open Sans", "Arial", sans-serif;
-	min-width: 1600px;
+	min-width: 720px;
+	overflow: hidden;
 }
 
-.container {
-	width: 1600px;
-	margin: auto;
-}
-	
 .intro-slide {
-	padding-top: 5px;
-	background: #463733 url("../img/bg_intro.jpg") no-repeat 0 0;
 	text-align: center;
+	min-width: 720px;
+	position: relative;
+}
+
+.masthead-overlay {
+	background-color: #000;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
 }
 
 .logo {
-	width: 149px;
+	width: 100%;
 	height: 200px;
 	margin: 0 auto;
-	margin-top: 50px;
+	top: 5%;
 	color: #ffffff;
+	position: absolute;
 }
 
 .main-title {
@@ -29,16 +38,19 @@ body {
 	color: #ffffff;
 	text-align: center;
 	font-weight: bold;
-	margin-top: 125px;
-	margin-bottom: 50px;
+	top: 35%;
+	position: absolute;
+	width: 100%;
 }
 
 .intro-icons {
 	color: #ffffff;
 	line-height: 18px;
-	width: 750px;
+	width: 100%;
 	margin: 0 auto;
 	font-size: 0;
+	top: 60%;
+	position: absolute;
 	
 }
 
@@ -66,7 +78,6 @@ body {
 	margin-right: -36px;
 	width: 72px;
 	height: 72px;
-	display: block;	
 }
 
 .icon-item:nth-child(1)::before {
@@ -79,6 +90,13 @@ body {
 
 .icon-item:nth-child(3)::before {
 	background-position: -5px -5px;
+}
+
+.btn-intro-wrapper {
+	position: absolute;
+	top:65%;
+	width: 100%;
+	text-align: center;
 }
 
 .btn {
