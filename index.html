@@ -7,7 +7,7 @@
 			<meta name="keywords" content="Дари дерево, дари живое, купить дерево в подарок, купить березу, купить дуб, купить пихту">
 			<meta name="description" content="">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CPT+Sans:700%7CRoboto:700&amp;subset=latin,cyrillic">
+			<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CPT+Sans:400,700%7CRoboto:700&amp;subset=latin,cyrillic">
 			<link rel="stylesheet" href="css/normalize.css">
 			<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -38,7 +38,9 @@
 			<a class="btn">Найти подарок</a>
 		</div>
 	</section>
+	
 	<section class="tree-slide oak">
+		<div class="container">
 		<div class="tree-descr-left">
 			<header class="tree-title">Дуб</header>
 			<h2>Вдохновляет на подвиги</h2>
@@ -46,12 +48,12 @@
 			<a class="btn">Хочу купить</a>
 		</div>
 		<div class="img-gallery">
-			<div class="img-item"><img src="img/pic_tubus.png" width="195" height="424" alt="Тубус"></div>
+			<div class="img-item"><img src="img/pic_tubus_med.png" width="161" height="350" alt="Тубус"></div>
 			<div class="img-item"><img src="img/pic_tubus_2.png" width="83" height="424" alt="Тубус"></div>
 			<div class="img-item"><img src="img/pic_tubus_3.png" width="183" height="424" alt="Тубус"></div>
-			<div class="img-item"><img src="img/pic_tubus.png" width="195" height="424" alt="Тубус"></div>
-			<div class="img-item"><img src="img/pic_tubus.png" width="195" height="424" alt="Тубус"></div>
-			<div class="img-item"><img src="img/pic_tubus.png" width="195" height="424" alt="Тубус"></div>
+			<div class="img-item"><img src="img/pic_tubus_sm.png" width="152" height="331" alt="Тубус"></div>
+			<div class="img-item"><img src="img/pic_tubus_sm.png" width="152" height="331" alt="Тубус"></div>
+			<div class="img-item"><img src="img/pic_tubus_sm.png" width="152" height="331" alt="Тубус"></div>
 		</div>
 		<div class="tree-descr-right">
 			<p>Вырастает до 5 метров</p>
@@ -65,16 +67,17 @@
 			</div>
 			<div class="gallery-control">
 				<p>Фоточки подарка</p>
-				<ul class="image-icons">
-					<li class="active"><img src="img/img-icon-1.png"></li>
-					<li><img src="img/img-icon-2.png" width="12" height="25"></li>
-					<li><img src="img/img-icon-3.png" width="12" height="25"></li>
-					<li><img src="img/img-icon-1.png" width="12" height="25"></li>
-					<li><img src="img/img-icon-1.png" width="12" height="25"></li>
-					<li><img src="img/img-icon-1.png" width="12" height="25"></li>
-				</ul>
+				<div class="image-icons">
+					<i class="active"></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
 			</div>
 		</div>
+			</div>
 		<nav class="main-navigation">
 			<ul class="main-menu">
 				<li><a href="#">Береза</a></li>
@@ -88,7 +91,35 @@
 				<li><a href="#">Пихта</a></li>
 			</ul>
 		</nav>
+		
 	</section>
+	
+	<footer class="main-footer">
+		<div class="footer-first-column">
+			<div class="contacts">
+				<h3 class="footer-title">Контакты</h3>
+				<p>+7 911 999 99 90<br>
+					<a href="mailto:kid86@list.ru">kid86@list.ru</a>
+				</p>
+			</div>
+			<div class="footer-social">
+				<a href="#" class="social-btn social-btn-vk"></a>
+				<a href="#" class="social-btn social-btn-fb"></a>
+			</div>
+			<div class="footer-copyright">
+				&#169; 2015 <span class="copyright-company">Дари дерево</span>
+			</div>
+		</div>
+		<div class="footer-second-column">
+			<h3 class="footer-title">Акции и новости</h3>
+			<p>Мы предлагаем быть в курсе акций, новостей и новинок магазина. Оставьте ваш e-mail</p>
+			<form class="subscribe" method="post" action="/">
+				<input type="email" name="email" placeholder="Ваш e-mail">
+				<button type="submit">Подписаться</button>
+			</form>	
+		</div>
+	</footer>
+	
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="js/vendor/covervid.mid.js"></script>
 	<script src="js/main.js"></script>

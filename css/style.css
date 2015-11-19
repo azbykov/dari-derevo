@@ -83,15 +83,15 @@ body {
 }
 
 .icon-item:nth-child(1)::before {
-	background-position: -5px -87px;
+	background-position: -10px -102px;
 }
 
 .icon-item:nth-child(2)::before {
-	background-position: -87px -5px;
+	background-position: -102px -10px;
 }
 
 .icon-item:nth-child(3)::before {
-	background-position: -5px -5px;
+	background-position: -10px -10px;
 }
 
 .btn-intro-wrapper {
@@ -105,7 +105,7 @@ body {
 	background-color: #dd2222;
 	display: inline-block;
 	color: #ffffff;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: bold;
 	line-height: 24px;
 	padding: 15px 35px;
@@ -119,6 +119,7 @@ body {
 	background-color: #9f0202;
 }
 
+
 /*tree-slide*/
 .tree-slide {
 	text-align: center;
@@ -126,6 +127,12 @@ body {
 	position: relative;
 	padding-top: 180px;
 	padding-bottom: 240px;
+	text-shadow: 0 0 10px #000000;*/
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 .tree-slide::after {
@@ -134,52 +141,62 @@ body {
 	clear: both;
 }
 
+.container {
+	width: 87%;
+	float: left;
+	text-align: center;
+}
+
+
 /*oak*/
 .tree-slide.oak {
 	background: #334d1b url("../img/bg_dub.jpg") no-repeat center 0;
 	color: #ffffff;
 }
 
+/*left-description*/
 .tree-descr-left {
+	display: inline-block;
+	vertical-align: top;
 	text-align: right;
-	min-width: 480px;/*в исходном макете 540*/
-	margin-top: 70px;
-	margin-right: 7%;/*100px*/
-	float: left;
+	min-width: 455px;/*в исходном макете 540*/
+	margin-top: 55px;
+	margin-right: 4%;/*100px*/
 }
-
+	
 .tree-title {
-	font-size: 63px;/*в исходном макете 100*/
+	font-size: 85px;/*в исходном макете 100*/
 	font-weight: bold;
-	margin-top: -10px;
-	margin-bottom: 0;
 }
 
 .tree-descr-left h2 {
-	font-size: 30px;/* в исходном макете 40*/
+	font-size: 27px;/* в исходном макете 40*/
 	font-weight: normal;
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-bottom: 10px;
 }
 
 .tree-descr-left p {
 	margin-top: 0;
 	font-size: 16px;/*в исходном макете 22*/
-	line-height: 36px;
+	line-height: 30px;
 }
 
 .tree-descr-left .btn {
-	font-size: 18px;
-	margin-top: 40px;
+	font-size: 17px;
+	margin-top: 30px;
 	margin-bottom: 0;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding: 14px 70px;
+	text-shadow: none;
 }
 
+/*gallery*/
 .img-gallery {
 	margin-top: 90px;
-	float: left;
-	margin-right: 7%;/*90px*/
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 3%;/*90px*/
+	width: 180px;
 }
 
 .img-gallery .img-item {
@@ -190,16 +207,19 @@ body {
 	display: block; 
 }
 
+/*right-description*/
 .tree-descr-right {
-	float: left;
-	margin-top: 80px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 75px;
+	width: 260px;
 }
 
 .tree-descr-right p {
-	font-size: 22px;/*в исходном макете 22*/
+	font-size: 20px;/*в исходном макете 22*/
 	margin-bottom: 0;
 	margin-top: 0;
-	line-height: 36px;
+	line-height: 34px;
 	text-align: left;
 	color: rgba(255,255,255,0.8);
 }
@@ -208,52 +228,14 @@ body {
 	font-size: 22px; /*в исходном макете 22*/
 	font-weight: 600;
 	text-align: left;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-bottom: 10px;
-}
-
-.gallery-control {
-	margin-top: 60px;
-}
-
-.gallery-control p {
-	text-transform: uppercase;
-	font-size: 12px;/*в исходном макете 12*/
-}
-
-.image-icons {
-	list-style: none;
-	font-size: 0;
-	padding: 0;
-	margin: 0;
-}
-
-.image-icons li {
-	display: inline-block;
-	vertical-align: top;
-	width: 30px;
-	height: 33px;
-	border: 2px solid #ffffff;
-	border-radius: 4px;
-	margin-right: 10px;
-	cursor: pointer;
-	position: relative;
-}
-
-.image-icons img {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.image-icons .active {
-	border-color: #dd2222;
 }
 
 .link-wrapper{
 	text-align: left;
 }
+
 .link-wrapper a {
 	display: inline-block;
 	font-size: 12px;/*в исходном макете 12*/
@@ -267,13 +249,85 @@ body {
 	color: rgba(255,255,255,0.5);
 }
 
+.gallery-control {
+	margin-top: 30px;
+}
+
+.gallery-control p {
+	text-transform: uppercase;
+	font-size: 12px;/*в исходном макете 12*/
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+
+.image-icons {
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+.image-icons i {
+	display: inline-block;
+	vertical-align: top;
+	width: 30px;
+	height: 33px;
+	border: 2px solid #ffffff;
+	border-radius: 4px;
+	margin-right: 10px;
+	cursor: pointer;
+	position: relative;
+	background: url("../img/sprite.png") no-repeat;
+}
+
+.image-icons i:hover{
+	border-color: #fdb4b4;
+}
+
+.image-icons i:last-child {
+	margin-right: 0;
+}
+
+.image-icons i:nth-child(1) {
+	background-position: -184px -4px;
+	background-color:  rgba(0,0,0,0.1);
+}
+
+.image-icons i:nth-child(2) {
+	 background-position: -215px -5px;
+}
+
+.image-icons i:nth-child(3) {
+	background-position: -185px -50px;
+}
+
+.image-icons i:nth-child(4) {
+	background-position: -184px -4px;
+}
+
+.image-icons i:nth-child(5) {
+	background-position: -184px -4px;
+}
+
+.image-icons i:nth-child(6){
+	background-position: -184px -4px;
+}
+
+.image-icons .active {
+	border-color: #dd2222;
+}
+.image-icons .active:hover{
+	border-color: #dd2222;
+}
+
+/*main-menu*/
 .main-navigation {
 	float: right;
 }
 
 .main-menu {
 	list-style: none;
-	width: 132px;
+	width: 125px;
 	margin: 0;
 	padding: 0;
 }
@@ -299,6 +353,130 @@ body {
 	background-color: #dd2222;
 }
 
+
+/*footer*/
+.main-footer{
+	background-color: #000000;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.main-footer::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.main-footer .footer-title{
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 26px;
+	margin-bottom: 10px;
+}
+.footer-first-column{
+	float: left;
+	margin-left: 20%;
+	width: 200px;
+}
+.contacts p{
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 26px;
+}
+.contacts a { 
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.footer-second-column p {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 26px;
+}
+
+.footer-social {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 25px;
+}
+
+.footer-second-column {
+	float: left;
+	margin-left: 10%;
+	width: 320px;
+}
+
+.footer-second-column input {
+	background-color: #000000;
+	outline: none;
+	border: none;
+	color: #ffffff;
+	border-bottom: 1px solid grey;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 26px;
+}
+
+.footer-second-column button {
+	background-color: #000000;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 26px;
+	outline: none;
+	border: none;
+	color: #dd2222;
+}
+
+.footer-second-column button:hover {
+	color: #9f0202;
+}
+
+.social-btn {
+	width: 40px;
+	height: 40px;
+	background-color: #dd2222;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 6px;
+	margin-top: 5px;
+	margin-bottom: 50px;
+}
+
+.social-btn-vk {
+	background-image: url("../img/vk.svg");
+	background-position: 8px;
+}
+
+.social-btn-fb {
+	background-image: url("../img/fb.svg");
+	background-position: 14px 9px;
+}
+
+.social-btn:last-child {
+	margin-right: 0;
+}
+
+.social-btn:hover {
+	background-color: #9f0202;
+}
+
+.footer-copyright {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+.copyright-company {
+	margin-left: 5px;
+}
+
 /*sprite*/
 .sprite {
     background-image: url(spritesheet.png);
@@ -309,17 +487,35 @@ body {
 .sprite-icon_hand {
     width: 72px;
     height: 72px;
-    background-position: -5px -5px;
+    background-position: -10px -10px;
 }
 
 .sprite-icon_present {
     width: 72px;
     height: 72px;
-    background-position: -87px -5px;
+    background-position: -102px -10px;
 }
 
 .sprite-icon_tree {
     width: 72px;
     height: 70px;
-    background-position: -5px -87px;
+    background-position: -10px -102px;
+}
+
+.sprite-img-icon-1 {
+    width: 9px;
+    height: 20px;
+    background-position: -194px -10px;
+}
+
+.sprite-img-icon-2 {
+    width: 12px;
+    height: 25px;
+    background-position: -223px -10px;
+}
+
+.sprite-img-icon-3 {
+    width: 11px;
+    height: 23px;
+    background-position: -194px -55px;
 }
