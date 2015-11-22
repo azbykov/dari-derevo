@@ -440,7 +440,6 @@ img {
 	width: 40px;
 	height: 40px;
 	background-color: #dd2222;
-	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	display: inline-block;
 	vertical-align: top;
@@ -476,6 +475,78 @@ img {
 .copyright-company {
 	margin-left: 5px;
 }
+
+
+/*modal-windows*/
+.modal-window {
+	position: fixed;
+	background-color: #ffffff;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+}
+
+.modal-close {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 29px;
+	height: 29px;
+	top: 0;
+	right: -40px;
+	cursor: pointer;
+	background: url("../img/sprite.png") no-repeat -205px -95px;
+	z-index: 100;
+}
+
+.modal-title {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+/*delivery*/
+.modal-delivery {
+	width: 570px;
+	margin-left: -295px;
+	margin-top: -155px;
+	font-size: 0;
+	padding-top: 10px;
+	padding-bottom: 75px;
+	display: none;
+}
+
+.modal-window-show {
+	display: block;
+}
+
+.delivery-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 225px;
+	padding-left: 60px;
+}
+
+.delivery-title {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.delivery-item p {
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 30px;
+	margin: 0;
+}
+
+.delivery-item .delivery-price{
+	text-transform: none;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+
 
 /*sprite*/
 .sprite {
