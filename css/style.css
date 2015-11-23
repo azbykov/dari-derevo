@@ -518,9 +518,6 @@ img {
 	display: none;
 }
 
-.modal-window-show {
-	display: block;
-}
 
 .delivery-item {
 	display: inline-block;
@@ -547,7 +544,155 @@ img {
 	line-height: 30px;
 }
 
+/*basket*/
+.modal-basket {
+	width: 750px;
+	margin-left: -375px;
+	margin-top: -250px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	display: none;
+}
 
+ .order-items {
+	 width: 100%;
+	 margin-top: 40px;
+	 margin-bottom: 30px;
+ }
+
+ .order-items td {
+	 padding: 20px 0;
+	 border-top: 1px solid #b2b2b2;
+	 border-bottom: 1px solid #b2b2b2;
+ }
+
+ .buy-item .name {
+	 min-width: 120px;
+ }
+
+.buy-item a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.buy-item .item-cost {
+	font-weight: bold;
+}
+
+.buy-item .empty {
+	width: 50px;
+	border: none;
+}
+
+.amount-control{
+	display: inline-block;
+}
+.amount-control .btn-controll {
+	width: 29px;
+	height: 29px;
+	outline: none;
+	border: 0;
+}
+
+.amount-control input {
+	vertical-align: top;
+	border: none;
+	text-align: right;
+	width: 35px;
+	display: inline-block;
+	line-height: 32px;
+	-moz-appearance: textfield;
+	}
+.amount-control input::-webkit-inner-spin-button{
+	display: none;
+}
+.amount-control input:focus{
+	outline: 1px solid #fdb4b4;
+}
+.amount-control span{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 34px;
+	vertical-align: top;
+}
+.amount-control .less {
+	background: url("../img/minus.png") no-repeat;
+}
+
+.amount-control .more {
+	background: url("../img/plus.png") no-repeat;
+	margin-left: 6px;
+}
+.delete{
+	width: 20px;
+	text-align: center;
+}
+.buy-item .delete-icon {
+	width: 20px;
+	height: 20px;
+	content: "";
+	display: inline-block;
+	background: url("../img/delete.svg");
+	cursor: pointer;
+}
+
+.table-foot th {
+	 padding: 20px 52px;
+	 font-weight: normal;
+	 text-transform: uppercase;
+	border-top: 1px solid #b2b2b2;
+	 border-bottom: 1px solid #b2b2b2;
+ }
+
+.table-foot .total-cost {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 8px;
+}
+
+.table-foot .currency {
+	text-transform: none;
+	font-weight: bold;
+}
+
+.table-foot {
+	background-color: #efefef;
+	text-align: left;
+}
+
+.email-basket {
+	font-size: 16px;
+	line-height: 24px;
+	padding-left: 52px;
+}
+
+.email-basket input {
+	width: 170px;
+	padding: 10px 10px;
+	padding-right: 15px;
+	margin-left: 10px;
+}
+
+.explic {
+	font-size: 13px;
+	line-height: 24px;
+	margin-top: 25px;
+	padding: 10px 52px;
+}
+
+.btn-basket {
+	border: 0;
+	outline: none;
+	font-size: 16px;
+	padding: 10px 15px;
+	margin: 0;
+	margin-left: 20px;
+}
+
+.modal-window-show {
+	display: block;
+}
 
 /*sprite*/
 .sprite {
