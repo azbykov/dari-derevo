@@ -518,7 +518,6 @@ img {
 	display: none;
 }
 
-
 .delivery-item {
 	display: inline-block;
 	vertical-align: top;
@@ -548,19 +547,19 @@ img {
 .modal-basket {
 	width: 750px;
 	margin-left: -375px;
-	margin-top: -250px;
+	margin-top: -320px;
 	padding-top: 10px;
 	padding-bottom: 40px;
 	display: none;
 }
 
- .order-items {
+ .buy-items {
 	 width: 100%;
 	 margin-top: 40px;
 	 margin-bottom: 30px;
  }
 
- .order-items td {
+ .buy-items td {
 	 padding: 20px 0;
 	 border-top: 1px solid #b2b2b2;
 	 border-bottom: 1px solid #b2b2b2;
@@ -585,14 +584,25 @@ img {
 	border: none;
 }
 
-.amount-control{
+.amount-control {
 	display: inline-block;
 }
+
 .amount-control .btn-controll {
 	width: 29px;
 	height: 29px;
 	outline: none;
 	border: 0;
+	background: url("../img/sprite.png") no-repeat;
+}
+
+.amount-control .less {
+	background-position: -104px -97px;
+}
+
+.amount-control .more {
+	background-position: -153px -97px;
+	margin-left: 6px;
 }
 
 .amount-control input {
@@ -603,31 +613,28 @@ img {
 	display: inline-block;
 	line-height: 32px;
 	-moz-appearance: textfield;
-	}
-.amount-control input::-webkit-inner-spin-button{
+}
+
+.amount-control input::-webkit-inner-spin-button {
 	display: none;
 }
-.amount-control input:focus{
+
+.amount-control input:focus {
 	outline: 1px solid #fdb4b4;
 }
-.amount-control span{
+
+.amount-control span {
 	display: inline-block;
 	vertical-align: top;
 	line-height: 34px;
 	vertical-align: top;
 }
-.amount-control .less {
-	background: url("../img/minus.png") no-repeat;
-}
 
-.amount-control .more {
-	background: url("../img/plus.png") no-repeat;
-	margin-left: 6px;
-}
-.delete{
+.delete {
 	width: 20px;
 	text-align: center;
 }
+
 .buy-item .delete-icon {
 	width: 20px;
 	height: 20px;

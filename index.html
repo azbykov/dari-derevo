@@ -114,7 +114,7 @@
 			<h3 class="footer-title">Акции и новости</h3>
 			<p>Мы предлагаем быть в курсе акций, новостей и новинок магазина. Оставьте ваш e-mail</p>
 			<form class="subscribe" method="post" action="/">
-				<input type="email" name="email-footer" placeholder="Ваш e-mail">
+				<input type="email" name="email-footer" placeholder="Ваш e-mail" required>
 				<button type="submit">Подписаться</button>
 			</form>	
 		</div>
@@ -139,7 +139,7 @@
 		<div class="modal-close"></div>
 		<form method="post" action="/" class="order">
 		<h2 class="modal-title">Корзина</h2>
-			<table class="order-items">
+			<table class="buy-items">
 				<tr class="buy-item">
 					<td class="empty"></td>
 					<td class="name"><a href="#">Клен</a></td>
@@ -175,7 +175,7 @@
 					<th colspan="7">Итого: <span class="total-cost">960</span> <span class="currency">руб.</span></th>
 				</tr>
 			</table>
-		<label class="email-basket">Email для оформления заказа: <input type="email" name="email-basket"></label>
+		<label class="email-basket">Email для оформления заказа: <input type="email" name="email-basket" required></label>
 		<button type="submit" class="btn btn-basket">Оформить заказ</button>
 		<div class="explic">В письме будет счет для оплаты. После оплаты менеджер согласует с вами способ доставки.</div>
 		</form>
@@ -186,6 +186,7 @@
 	<script src="js/main.js"></script>
 	<script src="js/delivery.js"></script>
 	<script src="js/basket.js"></script>
+	
 	
 </body>
 </html>
