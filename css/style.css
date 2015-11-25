@@ -694,9 +694,70 @@ img {
 	margin-left: 20px;
 }
 
+/*description*/
+.modal-description {
+	width: 750px;
+	margin-left: -425px;
+	margin-top: -220px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 70px;
+	display: none;
+}
+
+.modal-description::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.left-column {
+	float: left;
+	width: 500px;
+	border-right: 1px solid grey;
+	padding-right: 25px;
+}
+
+.left-column p {
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.left-column p:first-child {
+	margin-top: 0;
+}
+
+.left-column p:last-child {
+	margin-bottom: 0;
+}
+
+.right-column {
+	float: right;
+	width: 190px;
+}
+
+ .right-column p {
+	 font-size: 11px;
+	 line-height: 24px;
+	 margin-bottom: 15px;
+	 text-transform: uppercase;
+ }
+
+.right-column p:first-child {
+	margin-top: 0;
+}
+
+.right-column span {
+	font-size: 15px;
+	text-transform: none;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 .modal-window-show {
 	display: block;
 }
+
 
 /*sprite*/
 .sprite {
