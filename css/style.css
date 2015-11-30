@@ -191,12 +191,16 @@ img {
 }
 
 /*gallery*/
-.img-gallery {
-	margin-top: 95px;
+.img-gallery-wrapper {
+	width: 170px;
 	display: inline-block;
+	margin-top: 95px;
 	vertical-align: top;
 	margin-right: 2.5%;/*90px*/
-	width: 170px;
+}
+
+.img-gallery {
+	width: 100%;
 }
 
 .img-gallery .img-item {
@@ -206,6 +210,11 @@ img {
 .img-gallery .img-item:first-child {
 	display: block; 
 }
+
+.img-gallery, .gallery-control {
+    display: none!important;
+}
+
 
 /*right-description*/
 .tree-descr-right {
@@ -711,43 +720,43 @@ img {
 	clear: both;
 }
 
-.left-column {
+.left-column-descr {
 	float: left;
 	width: 500px;
 	border-right: 1px solid grey;
 	padding-right: 25px;
 }
 
-.left-column p {
+.left-column-descr p {
 	font-size: 15px;
 	line-height: 24px;
 }
 
-.left-column p:first-child {
+.left-column-descr p:first-child {
 	margin-top: 0;
 }
 
-.left-column p:last-child {
+.left-column-descr p:last-child {
 	margin-bottom: 0;
 }
 
-.right-column {
+.right-column-descr {
 	float: right;
 	width: 190px;
 }
 
- .right-column p {
+.right-column-descr p {
 	 font-size: 11px;
 	 line-height: 24px;
 	 margin-bottom: 15px;
 	 text-transform: uppercase;
  }
 
-.right-column p:first-child {
+.right-column-descr p:first-child {
 	margin-top: 0;
 }
 
-.right-column span {
+.right-column-descr span {
 	font-size: 15px;
 	text-transform: none;
 	margin-left: 5px;
@@ -757,6 +766,7 @@ img {
 .modal-window-show {
 	display: block;
 }
+
 
 
 /*sprite*/
