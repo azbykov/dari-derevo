@@ -45,7 +45,7 @@
 			<header class="tree-title">Дуб</header>
 			<h2>Вдохновляет на подвиги</h2>
 			<p>У корней дуба Жанна д’Арк обещала погнать англичан,<br> Богдан Хмельницкий &mdash; выгнать поляков, а чиновники<br> новой Франции произносили гражданские клятвы.</p>
-			<a class="btn">Хочу купить</a>
+			<a class="btn btn-buy">Хочу купить</a>
 		</div>
 		<div class="img-gallery">
 			<div class="img-item"><img src="img/pic_tubus_med.png" width="154" height="335" alt="Тубус"></div>
@@ -61,7 +61,7 @@
 			<p>Живет 10 лет</p>
 			<div class="price">349 &#8381;</div>
 			<div class="link-wrapper">
-				<a class="in-detail">Подробнее о дубе</a><br>
+				<a class="description descr-oak">Подробнее о дубе</a><br>
 				<a class="manual">Инструкция по выращиванию</a><br>
 				<a class="delivery">Информация о доставке</a>
 			</div>
@@ -114,7 +114,7 @@
 			<h3 class="footer-title">Акции и новости</h3>
 			<p>Мы предлагаем быть в курсе акций, новостей и новинок магазина. Оставьте ваш e-mail</p>
 			<form class="subscribe" method="post" action="/">
-				<input type="email" name="email" placeholder="Ваш e-mail">
+				<input type="email" name="email-footer" placeholder="Ваш e-mail" required>
 				<button type="submit">Подписаться</button>
 			</form>	
 		</div>
@@ -135,10 +135,75 @@
 		</div>
 	</div>
 	
+	<div class="modal-window modal-basket">
+		<div class="modal-close"></div>
+		<form method="post" action="/" class="order">
+		<h2 class="modal-title">Корзина</h2>
+			<table class="buy-items">
+				<tr class="buy-item">
+					<td class="empty"></td>
+					<td class="name"><a href="#">Клен</a></td>
+					<td class="quantity">
+						<div class="amount-control">
+							<button class="btn-controll less"></button>
+							<span><input type="number" size="3" value="1" name="quantity" min="0"> шт</span>
+							<button class="btn-controll more"></button>
+						</div>
+					</td>
+					<td class="item-price"><span class="price-sum">299</span> руб./шт</td>
+					<td class="item-cost"><span class="cost-sum">299</span> руб.</td>
+					<td class="delete"><span class="delete-icon"></span></td>
+					<td class="empty"></td>
+				</tr>
+				<tr class="buy-item">
+					<td class="empty"></td>
+					<td class="name"><a href="#">Дуб</a></td>
+					<td class="quantity">
+						<div class="amount-control">
+							<button class="btn-controll less"></button>
+							<input type="number" size="3" value="1" name="quantity" min="0"> <span>шт</span>
+							<button class="btn-controll more"></button>
+						</div>
+					</td>
+					<td class="item-price"><span class="price-sum">250</span> руб./шт</td>
+					<td class="item-cost"><span class="cost-sum">250</span> руб.</td>
+					<td class="delete"><span class="delete-icon"></span></td>
+					<td class="empty"></td>
+				</tr>
+				
+				<tr class="table-foot">
+					<th colspan="7">Итого: <span class="total-cost">960</span> <span class="currency">руб.</span></th>
+				</tr>
+			</table>
+		<label class="email-basket">Email для оформления заказа: <input type="email" name="email-basket" required></label>
+		<button type="submit" class="btn btn-basket">Оформить заказ</button>
+		<div class="explic">В письме будет счет для оплаты. После оплаты менеджер согласует с вами способ доставки.</div>
+		</form>
+	</div>
+	
+	<div class="modal-window modal-description">
+		<div class="modal-close"></div>
+		<h2 class="modal-title">Береза</h2>
+		<div class="left-column">
+			<p>Простая и трогательная красота берёзы сообщает ей высокую эстетическую ценность. Стройное белоствольное светлое дерево, дающее сквозистую тень, украшающее в любое время года всякий сельский вид, пользуется особой любовью в России. 
+С давних лет берёза была образом России.</p>
+			<p>Ветвями берёзы украшают церкви и жилища на День Святой Троицы. Листья дают с квасцами жёлтую краску для шерсти.
+Берёзы &mdash; хорошие пыльценосные растения.</p>
+			<p>Берёзовая лучина считалась в старину лучшей для освещения крестьянских изб &mdash; она горит ярко и почти без копоти.</p>
+		</div>
+		<div class="right-column">
+			<p>Высота:<span>20&ndash;45 м</span></p>
+			<p>Обхват ствола:<span>120&ndash;150 см</span></p>
+			<p>Сложность ухода:<span>простая</span></p>
+		</div>
+	</div>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="js/vendor/covervid.mid.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/delivery.js"></script>
+	<script src="js/basket.js"></script>
+	<script src="js/description.js"></script>
+	
 	
 </body>
 </html>
