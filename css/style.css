@@ -150,8 +150,12 @@ img {
 
 /*oak*/
 .tree-slide.oak {
-	background: #334d1b url("../img/bg_dub.jpg") no-repeat center 0;
+	background: #334d1b url("../img/bg_dub.jpg") no-repeat 0 0 fixed;
 	color: #ffffff;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 /*left-description*/
@@ -163,7 +167,7 @@ img {
 	margin-top: 60px;
 	margin-right: 3.5%;/*100px*/
 }
-	
+
 .tree-title {
 	font-size: 85px;/*в исходном макете 100*/
 	font-weight: bold;
@@ -200,11 +204,11 @@ img {
 }
 
 .img-gallery .img-item {
-	display: none; 
+	display: none;
 }
 
 .img-gallery .img-item:first-child {
-	display: block; 
+	display: block;
 }
 
 /*right-description*/
@@ -388,7 +392,7 @@ img {
 	line-height: 26px;
 }
 
-.contacts a { 
+.contacts a {
 	color: #ffffff;
 	text-decoration: none;
 }
